@@ -1,0 +1,879 @@
+<!doctype html>
+<html class="scrollbar-thin scrollbar-thumb-zinc-400 scrollbar-track-zinc-950 rounded-b" lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/output.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/public/svg/icone-YouTubeSmall.svg"
+      type="image/x-icon"
+    />
+    <title>YouTube</title>
+  </head>
+  <body class="h-screen bg-zinc-950 text-zinc-100">
+    <div class="h-screen flex flex-col mt-2">
+      <header
+        class="flex flex-row items-center justify-between mt-3 h-20 bg-zinc-950"
+      >
+        <div class="flex items-center ml-6 gap-6">
+          <button
+            class="bg-zinc-950 rounded-full flex justify-center items-center h-8 w-8 group hover:bg-zinc-700 hover:text-zinc-100"
+          >
+            <i
+              class="text-white group-hover:text-zinc-100"
+              data-lucide="menu"
+            ></i>
+          </button>
+          <img class="h-6 cursor-pointer" src="./src/public/svg/icone-YouTube.svg" alt="" />
+        </div>
+
+        <div class="flex gap-3 relative items-center">
+          <div class="flex">
+            <div class="flex flex-row-reverse">
+              <input
+              class="rounded-l-full bg-zinc-800 text-zinc-400 pl-5 w-128 h-10"
+              type="text"
+              placeholder="Pesquisar"
+              />
+              <label class="absolute inset-y-0 mr-4 flex items-center justify-center pl-3">
+              <i
+                class="text-zinc-400 hover:text-zinc-100 cursor-pointer"
+                data-lucide="keyboard"
+              ></i>
+              </label>
+            </div>
+            <div class="h-10 w-14 rounded-r-full flex bg-zinc-700 items-center">
+              <button class="flex ml-3 items-center"><i class="flex items-center" data-lucide="search"></i></button>
+            </div>
+          </div>
+
+
+          <button
+            class="bg-zinc-800 rounded-full flex justify-center items-center h-10 w-10 group hover:bg-zinc-700 hover:text-zinc-100"
+          >
+            <i
+              class="text-zinc-400 group-hover:text-zinc-100"
+              data-lucide="mic"
+            ></i>
+          </button>
+        </div>
+
+        <div class="flex flex-row gap-6 mr-4">
+          <button
+            class="bg-zinc-950 rounded-full flex justify-center items-center h-10 w-10 group hover:bg-zinc-700 hover:text-zinc-100"
+          >
+            <i
+              class="size-6 text-zinc-100 group-hover:text-zinc-100"
+              data-lucide="bell-plus"
+            ></i>
+          </button>
+
+          <button
+            class="bg-zinc-950 rounded-full flex justify-center items-center h-10 w-10 group hover:bg-zinc-700 hover:text-zinc-100"
+          >
+            <i
+              class="size-7 text-zinc-100 group-hover:text-zinc-100"
+              data-lucide="video"
+            ></i>
+          </button>
+
+          <button
+            class="bg-zinc-950 rounded-full flex justify-center items-center h-10 w-10 group hover:bg-zinc-700 hover:text-zinc-100"
+          >
+            <i
+              class="size-6 text-zinc-100 group-hover:text-zinc-100"
+              data-lucide="user"
+            ></i>
+          </button>
+        </div>
+      </header>
+
+      <div class="flex flex-1">
+        <aside class="w-64 mt-2 p-2">
+          <nav class="ml-4 flex flex-col">
+            <a
+              class="bg-zinc-800 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-700"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="home"
+              ></i>Ínicio</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="square-play"
+              ></i
+              >Shorts</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="gallery-vertical-end"
+              ></i
+              >Inscrições</a
+            >
+
+            <br>
+            <div class="mt-0 h-px bg-neutral-500 mr-3"></div>
+            <br>
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center gap-1 hover:bg-zinc-800 mr-4"
+              href=""
+            >
+              <span class="ml-3 text-lg">Você</span
+              ><i data-lucide="chevron-right"></i
+            ></a>
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="square-user-round"
+              ></i
+              >Seu Canal</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="history"
+              ></i
+              >Histórico</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="list-video"
+              ></i
+              >Playlist</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="square-play"
+              ></i
+              >Seus Vídeos</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="clapperboard"
+              ></i
+              >Seus Filmes</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="lightbulb"
+              ></i
+              >Seus Cursos</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="clock"
+              ></i
+              >Assistir mais tarde</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="square-play"
+              ></i
+              >Vídeos com "Gostei"</a
+            >
+            <br>
+            <div class="h-px bg-neutral-500 mt-1 mr-3"></div>
+            <br>    
+              
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center gap-1  mr-4"
+              href=""
+              >
+              <span class="ml-3 text-lg">Inscrições</span></a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><img
+                class="ml-2 h-7 w-7 rounded-full flex items-center justify-center"
+                src="./src/public/img/channel2.jpg"
+              ></img
+              >CNN Brasil</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><img
+                class="ml-2 h-7 w-7 rounded-full flex items-center justify-center"
+                src="./src/public/img/channel1.jpg"
+              ></img
+              >Chill Music Lab</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><img
+                class="ml-2 h-7 w-7 rounded-full flex items-center justify-center"
+                src="./src/public/img/channel3.jpg"
+              ></img>Rádio BandNews</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><img
+                class="ml-2 h-7 w-7 rounded-full flex items-center justify-center"
+                src="./src/public/img/channel4.jpg"
+              ></img>Rocketseat</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><img
+                class="ml-2 h-7 w-7 rounded-full flex items-center justify-center"
+                src="./src/public/img/channel5.jpg"
+              ></img
+              >Canaltech</a
+            >
+
+            <a
+            class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+            href=""
+            ><i class="ml-3 flex items-center justify-center" data-lucide="chevron-down"></i>Mostar Mais</a>
+          
+            <br>
+            <div class="h-px bg-neutral-500 mt-1 mr-3"></div>
+            <br> 
+
+            <a
+              class="bg-zinc-950 rounded-lg mr-4 h-10 flex items-center gap-1 "
+              href=""
+              >
+              <span class="ml-3 text-lg">Explorar</span></a
+            >
+            
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="flame"
+              ></i
+              >Em Alta</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="shopping-bag"
+              ></i
+              >shopping</a
+            >
+
+            <a
+            class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+            href=""
+            ><i
+              class="ml-3 flex items-center justify-center"
+              data-lucide="music-2"
+            ></i
+            >Músicas</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="clapperboard"
+              ></i
+              >Filmes</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="clapperboard"
+              ></i
+              >Seus Filmes</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="radio"
+              ></i
+              >Ao Vivo</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="gamepad-2"
+              ></i
+              >Jogos</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="newspaper"
+              ></i
+              >Notícias</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="trophy"
+              ></i
+              >Esportes</a
+            >
+
+            <a
+              class="bg-zinc-950 rounded-lg h-10 flex items-center mr-4 gap-6 hover:bg-zinc-800"
+              href=""
+              ><i
+                class="ml-3 flex items-center justify-center"
+                data-lucide="podcast"
+              ></i
+              >Podcasts</a
+            >
+          </nav>
+        </aside>
+
+        <main class="flex-1 bg-zinc-950 mt-2">
+          <nav class="ml-2 flex flex-row gap-3 mt-2 mr-4">
+            <a
+              class="text-zinc-950 h-8 flex item-center text-lg bg-zinc-200 w-auto px-4 rounded-md group  "
+              href=""
+              >Tudo</a
+            >
+            <a
+              class="text-zinc-100 h-8 flex item-center text-lg bg-zinc-800 w-auto px-4 rounded-md group hover:bg-zinc-500 "
+              href=""
+              >Ao Vivo</a
+            >
+            <a
+              class="text-zinc-100 h-8 flex item-center text-lg bg-zinc-800 w-auto px-4 rounded-md group hover:bg-zinc-500 "
+              href=""
+              >Jogos</a
+            >
+            <a
+              class="text-zinc-100 h-8 flex item-center text-lg bg-zinc-800 w-auto px-4 rounded-md group hover:bg-zinc-500 "
+              href=""
+              >Música ambiente</a
+            >
+            <a
+              class="text-zinc-100 h-8 flex item-center text-lg bg-zinc-800 w-auto px-4 rounded-md group hover:bg-zinc-500 "
+              href=""
+              >Notícias</a
+            >
+            <a
+              class="text-zinc-100 h-8 flex item-center text-lg bg-zinc-800 w-auto px-4 rounded-md group hover:bg-zinc-500 "
+              href=""
+              >Link</a
+            >
+            <a
+              class="text-zinc-100 h-8 flex item-center text-lg bg-zinc-800 w-auto px-4 rounded-md group hover:bg-zinc-500 "
+              href=""
+              >Músicas</a
+            >
+            <a
+              class="text-zinc-100 h-8 flex item-center text-lg bg-zinc-800 w-auto px-4 rounded-md group hover:bg-zinc-500 "
+              href=""
+              >Programação de computadores</a
+            >
+            <a
+              class="text-zinc-100 h-8 flex item-center text-lg bg-zinc-800 w-auto px-4 rounded-md group hover:bg-zinc-500 "
+              href=""
+              >Mixer</a
+            >
+            <a
+              class="text-zinc-100 h-8 flex item-center text-lg bg-zinc-800 w-auto px-4 rounded-md group hover:bg-zinc-500 "
+              href=""
+              >O é da Coisa</a
+            >
+            <a
+              class="text-zinc-100 h-8 flex item-center text-lg bg-zinc-800 w-auto px-4 rounded-md group hover:bg-zinc-500 "
+              href=""
+              >Link</a
+            >
+            <a
+              class="text-zinc-100 h-8 flex item-center text-lg bg-zinc-800 w-auto px-4 rounded-md group hover:bg-zinc-500 "
+              href=""
+              >Link</a
+            >
+            <a
+              class="text-zinc-100 h-8 flex item-center text-lg bg-zinc-800 w-auto px-4 rounded-md group hover:bg-zinc-500 "
+              href=""
+              >Destiny1</a
+            >
+            <a
+              class="text-zinc-100 h-8 flex item-center text-lg bg-zinc-800 w-auto px-4 rounded-md group hover:bg-zinc-500 "
+              href=""
+              >Class</a
+            >
+          </nav>
+
+          <div class="mt-7 p-2 grid grid-cols-5 gap-5 mr-4">
+            <a
+              href=""
+              class="group rounded flex flex-col items-center gap-4"
+            >
+              <img class="rounded-lg" src="./src/public/img/image1.jpg" alt="" />
+              <div class="flex justify-between gap-4">
+                <div class="">
+                  <img class="h-8 w-8 rounded-full" src="./src/public/img/casinoSmall.avif" alt="" />
+                </div>
+
+                <div class="flex flex-col">
+                  <strong>Casino de Las Vegas</strong>
+                  <p class="text-zinc-400">Channel</p>
+                  <p class="text-sm text-zinc-400">3,14 mil visualizações <span></span>há 1 hora</p>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href=""
+              class=" group rounded flex flex-col items-center gap-4"
+              >
+              <img class="rounded-lg" src="./src/public/img/image2.jpg" alt="" />
+              <div class="flex justify-between gap-4">
+                <div class="">
+                  <img class="h-8 w-8 rounded-full" src="./src/public/img/image2.0.jpg" alt="" />
+                </div>
+                
+                <div class="flex flex-col"> 
+                  <strong>Brooklyn Nova York</strong> 
+                  <div class="flex flex-row items-center gap-1 ">
+                    <p class="text-zinc-400">Ny News</p>
+                    <i class="size-1 w-3 h-3 text-sm items-center text-zinc-400" data-lucide="circle-check-big"></i>
+                  </div>
+                  <div class="flex flex-row items-center">
+                  <p class="text-sm text-zinc-400">1,14 mi visualizações há 5 meses</p>
+                  </div>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+              </div>
+            </a>
+            <a
+              href=""
+              class=" group rounded flex flex-col items-center gap-4"
+              >
+              <img class="rounded-lg" src="./src/public/img/image3.jpg" alt="" />
+              <div class="flex justify-between gap-4">
+                <div class="">
+                  <img class="h-8 w-8 rounded-full" src="./src/public/img/image2.0.jpg" alt="" />
+                </div>
+                
+                <div class="flex flex-col"> 
+                  <strong>Los Angeles</strong> 
+                  <div class="flex flex-row items-center gap-1 ">
+                    <p class="text-zinc-400">Channel </p>
+                    <i class="size-1 w-3 h-3 text-sm text-zinc-400" data-lucide="circle-check-big"></i>
+                  </div>
+                  <div class="flex flex-row items-center">
+                  <p class="text-sm text-zinc-400">1,14 mi visualizações há 5 meses</p>
+                  </div>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href=""
+              class=" group rounded flex flex-col items-center gap-4"
+              >
+              <img class="rounded-lg" src="./src/public/img/image4.jpg" alt="" />
+              <div class="flex justify-between gap-4">
+                <div class="">
+                  <img class="h-8 w-8 rounded-full" src="./src/public/img/image2.0.jpg" alt="" />
+                </div>
+                
+                <div class="flex flex-col"> 
+                  <strong>Future of Games</strong> 
+                  <div class="flex flex-row items-center gap-1 ">
+                    <p class="text-zinc-400">Channel </p>
+                    <i class="size-1 w-3 h-3 text-sm text-zinc-400" data-lucide="circle-check-big"></i>
+                  </div>
+                  <div class="flex flex-row items-center">
+                    <p class="text-sm text-zinc-400">1,14 mi visualizações há 5 meses</p>
+                  </div>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href=""
+              class=" group rounded flex flex-col items-center gap-4"
+              >
+              <img class="rounded-lg" src="./src/public/img/image5.jpg" alt="" />
+              <div class="flex justify-between gap-4">
+                <div class="">
+                  <img class="h-8 w-8 rounded-full" src="./src/public/img/image2.0.jpg" alt="" />
+                </div>
+                
+                <div class="flex flex-col"> 
+                  <strong>Grand Thef Auto IV</strong> 
+                  <div class="flex flex-row items-center gap-1 ">
+                    <p class="text-zinc-400">Channel </p>
+                    <i class="size-1 w-3 h-3 text-sm text-zinc-400" data-lucide="circle-check-big"></i>
+                  </div>
+                  <div class="flex flex-row items-center">
+                  <p class="text-sm text-zinc-400">1,14 mi visualizações há 5 meses</p>
+                  </div>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+              </div>
+            </a>            
+          </div>
+
+          <div class="p-2 grid grid-cols-5 gap-5 mr-4 mt-16">
+            <a
+              href=""
+              class="group rounded flex flex-col items-center gap-4"
+            >
+              <img class="rounded-lg" src="./src/public/img/image6.jpg" alt="" />
+              <div class="flex justify-between gap-4">
+                <div class="">
+                  <img class="h-8 w-8 rounded-full" src="./src/public/img/casinoSmall.avif" alt="" />
+                </div>
+
+                <div class="flex flex-col">
+                  <strong>Testa e Nasa</strong>
+                  <p class="text-zinc-400">Channel</p>
+                  <p class="text-sm text-zinc-400">3,14 mil visualizações <span></span>há 1 hora</p>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href=""
+              class=" group rounded flex flex-col items-center gap-4"
+              >
+              <img class="rounded-lg" src="./src/public/img/image7.jpg" alt="" />
+              <div class="flex justify-between gap-4">
+                <div class="">
+                  <img class="h-8 w-8 rounded-full" src="./src/public/img/image2.0.jpg" alt="" />
+                </div>
+                
+                <div class="flex flex-col"> 
+                  <strong>Hardware em Alta</strong> 
+                  <div class="flex flex-row items-center gap-1 ">
+                    <p class="text-zinc-400">Channel </p>
+                    <i class="size-1 w-3 h-3 text-sm text-zinc-400" data-lucide="circle-check-big"></i>
+                  </div>
+                  <div class="flex flex-row items-center">
+                  <p class="text-sm text-zinc-400">1,14 mi visualizações há 5 meses</p>
+                  </div>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+              </div>
+            </a>
+            <a
+              href=""
+              class=" group rounded flex flex-col items-center gap-4"
+              >
+              <img class="rounded-lg" src="./src/public/img/image8.jpg" alt="" />
+              <div class="flex justify-between gap-4">
+                <div class="">
+                  <img class="h-8 w-8 rounded-full" src="./src/public/img/image2.0.jpg" alt="" />
+                </div>
+                
+                <div class="flex flex-col"> 
+                  <strong>Lega dos Compeões</strong> 
+                  <div class="flex flex-row items-center gap-1 ">
+                    <p class="text-zinc-400">Channel </p>
+                    <i class="size-1 w-3 h-3 text-sm text-zinc-400" data-lucide="circle-check-big"></i>
+                  </div>
+                  <div class="flex flex-row items-center">
+                  <p class="text-sm text-zinc-400">1,14 mi visualizações há 5 meses</p>
+                  </div>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href=""
+              class=" group rounded flex flex-col items-center gap-4"
+              >
+              <img class="rounded-lg" src="./src/public/img/image9.jpg" alt="" />
+              <div class="flex justify-between gap-4">
+                <div class="">
+                  <img class="h-8 w-8 rounded-full" src="./src/public/img/image2.0.jpg" alt="" />
+                </div>
+                
+                <div class="flex flex-col"> 
+                  <strong>Drinks e Drogas</strong> 
+                  <div class="flex flex-row items-center gap-1 ">
+                    <p class="text-zinc-400">Channel </p>
+                    <i class="size-1 w-3 h-3 text-sm text-zinc-400" data-lucide="circle-check-big"></i>
+                  </div>
+                  <div class="flex flex-row items-center">
+                  <p class="text-sm text-zinc-400">1,14 mi visualizações há 5 meses</p>
+                  </div>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href=""
+              class=" group rounded flex flex-col items-center gap-4"
+              >
+              <img class="rounded-lg" src="./src/public/img/image10.jpg" alt="" />
+              <div class="flex justify-between gap-4">
+                <div class="">
+                  <img class="h-8 w-8 rounded-full" src="./src/public/img/image2.0.jpg" alt="" />
+                </div>
+                
+                <div class="flex flex-col"> 
+                  <strong>Atris em Destaque</strong> 
+                  <div class="flex flex-row items-center gap-1 ">
+                    <p class="text-zinc-400">Channel </p>
+                    <i class="size-1 w-3 h-3 text-sm text-zinc-400 " data-lucide="circle-check-big"></i>
+                  </div>
+                  <div class="flex flex-row items-center">
+                  <p class="text-sm text-zinc-400">1,14 mi visualizações há 5 meses</p>
+                  </div>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+              </div>
+            </a>            
+          </div>
+
+          <div class="flex flex-row items-center ml-4 mt-16 gap-2">
+              <img class="h-5 w-5 flex" src="./src/public/svg/icone-YouTubeShorts.svg" alt="">
+              <h1 class="flex items-center text-xl font-bold">Shorts</h1>
+          </div>  
+
+          <div class="grid grid-cols-7 mt-4 p-2 gap-4 mr-4">
+
+            <a class=" flex flex-col gap-4 group" href="">
+
+              <img class="rounded-lg" src="./src/public/img/templete1.jpg" alt="">
+
+              <div class="flex items-start justify-between">
+
+                <div class="flex flex-col">
+                  <h1 class="font-bold">Dubai</h1>
+                  <p class="text-zinc-400">2,85 mil visualizações</p>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+
+              </div>
+
+            </a>
+
+            <a class=" flex flex-col gap-4 group" href="">
+
+              <img class="rounded-lg h-full" src="./src/public/img/templete2.jpg" alt="">
+
+              <div class="flex items-start justify-between">
+
+                <div class="flex flex-col">
+                  <h1 class="font-bold">Metrô São Paulo</h1>
+                  <p class="text-zinc-400">100 mil visualizações</p>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+
+              </div>
+
+            </a>
+
+            <a class=" flex flex-col gap-4 group" href="">
+
+              <img class="rounded-lg h-full" src="./src/public/img/templete3.jpg" alt="">
+
+              <div class="flex items-start justify-between">
+
+                <div class="flex flex-col">
+                  <h1 class="font-bold">Rua 25 Março</h1>
+                  <p class="text-zinc-400">2,85 mil visualizações</p>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+
+              </div>
+
+            </a>
+
+            <a class=" flex flex-col gap-4 group" href="">
+
+              <img class="rounded-lg" src="./src/public/img/templete4.jpg" alt="">
+
+              <div class="flex items-start justify-between">
+
+                <div class="flex flex-col">
+                  <h1 class="font-bold">Ponte</h1>
+                  <p class="text-zinc-400">2 mi visualizações</p>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+
+              </div>
+
+            </a>
+
+            <a class=" flex flex-col gap-4 group" href="">
+
+              <img class="rounded-lg h-full" src="./src/public/img/templete5.jpg" alt="">
+
+              <div class="flex items-start justify-between">
+
+                <div class="flex flex-col">
+                  <h1 class="font-bold">Igrejas</h1>
+                  <p class="text-zinc-400">85 mil visualizações</p>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+
+              </div>
+
+            </a>
+
+            <a class=" flex flex-col gap-4 group" href="">
+
+              <img class="rounded-lg h-full" src="./src/public/img/templete6.jpg" alt="">
+
+              <div class="flex items-start justify-between">
+
+                <div class="flex flex-col">
+                  <h1 class="font-bold">Sensação dos Jovens</h1>
+                  <p class="text-zinc-400">45 mi visualizações</p>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+
+              </div>
+
+            </a>
+
+            <a class=" flex flex-col gap-4 group" href="">
+
+              <img class="rounded-lg" src="./src/public/img/templete7.jpg" alt="">
+
+              <div class="flex items-start justify-between">
+
+                <div class="flex flex-col">
+                  <h1 class="font-bold">Déficit Desenvolvedores</h1>
+                  <p class="text-zinc-400">2,85 mil visualizações</p>
+                </div>
+
+                <div>
+                  <button<i class="invisible group-hover:visible" data-lucide="ellipsis-vertical"></i></button>
+                </div>
+
+              </div>
+
+            </a>
+
+          </div>
+
+        </main>
+      </div>
+      <footer class="fixed bottom-0 w-screen h-px bg-zinc-950"></footer>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
